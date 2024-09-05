@@ -99,7 +99,8 @@
 }
 .card img{
     width: 100%;
-    height: 50%;
+    height: 40%;
+    object-fit: cover; 
 }
 .cards{
     display: flex;
@@ -148,11 +149,12 @@ flex-grow: 1;
    margin: 5px;
    margin-bottom: 5px;
 }
-.Popular-card img{
-    height:50%;
-    width:100%;
+.Popular-card img {
+    height: 50%;
+    width: 100%;   
+    object-fit: cover; 
     
-}  
+} 
 .footer{
     display: flex;
     
