@@ -86,12 +86,29 @@
     position:absolute;
     top: 10%;
     left: 10%;
+    border-radius: 5px;
     color: rgb(21, 22, 22);
-    padding: 20px;
-    background-color: #fff;
-    width: 20%;
-    
+    padding: 2%;
+    background-color: #e6e1b7;
+    width: 200px;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0; 
+    animation-fill-mode: forwards; 
 }
+
+
+@keyframes zoom {
+    from {
+        transform: scale(1);
+        opacity: 0; 
+    }
+    to {
+        transform: scale(1.1); /* Final scale */
+        opacity: 1; /* Final opacity */
+    }
+}
+
 .card-header{
     padding: 10px;
     
@@ -208,5 +225,13 @@ body{
     }
     .Popular-card{
         flex-basis: 40%;
+    }
+}
+@media screen and (min-width:660px) {
+    .main-content {
+        animation-name: zoom;
+        animation-duration: 2s;
+        opacity: 0; /* Element starts as invisible */
+        animation-fill-mode: forwards; /* Keep the final animation state */
     }
 }
